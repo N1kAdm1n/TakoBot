@@ -5,7 +5,7 @@ Looking for a code for a music bot ? This fully open source code is made for you
 
 If you need help with this project, to get support faster you can join the help server by just clicking [here](https://discord.gg/5cGSYV8ZZj).
 
-### ⚡ Installation
+### Установка
 
 Well, let's start by downloading the code.
 Go to the folder `config` then the file `bot.js`.
