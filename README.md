@@ -52,7 +52,7 @@ pm2 start index.js --name "MusicBot"
 
 All you have to do is turn on your bot !
 
-### 🎵 Music commands
+### Музыкальные команды
 
 ```
 play <name/URL>, play music in a voice channel.
@@ -71,7 +71,7 @@ filter <filter>, add / remove filter.
 w-filters, see filters.
 ```
 
-### 💡 General commands
+### Общие команды
 
 ```
 ping, see the bot latency.
