@@ -1,10 +1,17 @@
 module.exports = {
     name: 'roll',
     aliases: [],
-    category: 'Custom',
+    category: 'Misc',
     utilisation: '{prefix}roll d[maximum roll]',
 
     execute(client, message, args) {
-        message.channel.send(`${message.author} тебе выпало ${Math.floor(Math.random()*(message.content.match(/\d+/)[0]))+1}`);
+        let ammount = message.content.match(/\d+/)[0];
+        if (ammount == '00'){
+            let roll = Math.floor(Math.random()*100)+1;
+            message.channel.send(`${message.author} тебе выпало ${roll}%`);
+        } else {
+            let roll = Math.floor(Math.random()*ammount)+1;
+            message.channel.send(`${message.author} тебе выпало ${roll}`);
+        }
     },
 };

@@ -13,6 +13,7 @@
     "discord-player": "^3.3.2",
     "discord.js": "^12.5.1",
     "ffmpeg-static": "^4.2.7",
+    "lyrics-finder": "^21.7.0",
     "opusscript": "0.0.8",
     "ytdl-core": "^4.5.0"
   }

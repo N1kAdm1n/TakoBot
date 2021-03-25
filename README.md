@@ -5,7 +5,7 @@ Looking for a code for a music bot ? This fully open source code is made for you
 
 If you need help with this project, to get support faster you can join the help server by just clicking [here](https://discord.gg/5cGSYV8ZZj).
 
-### Установка
+### ⚡ Installation
 
 Well, let's start by downloading the code.
 Go to the folder `config` then the file `bot.js`.
@@ -52,7 +52,7 @@ pm2 start index.js --name "MusicBot"
 
 All you have to do is turn on your bot !
 
-### Музыкальные команды
+### 🎵 Music commands
 
 ```
 play <name/URL>, play music in a voice channel.
@@ -71,7 +71,7 @@ filter <filter>, add / remove filter.
 w-filters, see filters.
 ```
 
-### Общие команды
+### 💡 General commands
 
 ```
 ping, see the bot latency.

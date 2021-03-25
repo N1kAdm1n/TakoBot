@@ -1,21 +1,24 @@
 module.exports = (client, error, message, ...args) => {
     switch (error) {
         case 'NotPlaying':
-            message.channel.send(`${client.emotes.error} - There is no music being played on this server !`);
+            message.channel.send(`На сервере не играет никакой музыки!`)
             break;
         case 'NotConnected':
-            message.channel.send(`${client.emotes.error} - You are not connected in any voice channel !`);
+            message.channel.send(`Ты не подключён ни к одному из голосовых каналов!`);
             break;
         case 'UnableToJoin':
-            message.channel.send(`${client.emotes.error} - I am not able to join your voice channel, please check my permissions !`);
+            message.channel.send(`Я не могу присоединиться к твоему голосовому каналу, пожалуйста, проверьте мои разрешения!`);
             break;
         case 'VideoUnavailable':
-            message.channel.send(`${client.emotes.error} - ${args[0].title} is not available in your country! Skipping...`);
+            message.channel.send(`${args[0].title} недоступен в вашей стране! Пропускаю...`);
             break;
         case 'MusicStarting':
-            message.channel.send(`The music is starting... please wait and retry!`);
+            message.channel.send(`Музыка включается ... подожди и повтори попытку!`);
+            break;
+        case 'LiveVideo':
+            message.channel.send(`Включение стримов временно недоступно!`);
             break;
         default:
-            message.channel.send(`${client.emotes.error} - Something went wrong ... Error : ${error}`);
+            message.channel.send(`${client.emotes.error} - Что-то пошло не так ... Ошибка : ${error}`);
     };
 };
