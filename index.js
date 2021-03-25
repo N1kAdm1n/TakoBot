@@ -11,6 +11,23 @@ client.emotes = client.config.emojis;
 client.filters = client.config.filters;
 client.commands = new discord.Collection();
 
+client.on('message', message => {
+	if((message.channel.id =="718451613575938068")||(message.channel.id =="713101698150957136")) {
+		console.log('Author: ' + message.author.username); console.log('Message: ' + message.content); message.react('➕'); message.react('➖');
+	}
+    	if (!message.author.bot){
+        	let pun = message.content;
+        	if ((pun.indexOf("Я ") == 0) || (pun.indexOf("я ") == 0)){
+            	pun = pun.slice(2);
+            	if ((pun.indexOf("Я ") == 0) || (pun.indexOf("я ") == 0)){
+                	message.channel.send(`Привет, ${pun}!`)
+            	} else {
+                	message.channel.send(`Привет ${pun}!`);
+            	}
+        }
+    }
+});
+
 fs.readdirSync('./commands').forEach(dirs => {
     const commands = fs.readdirSync(`./commands/${dirs}`).filter(files => files.endsWith('.js'));
 
